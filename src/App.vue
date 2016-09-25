@@ -19,17 +19,21 @@
       <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
       <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
     </p>
+    <hr>
+    <h1>路由试验</h1>
+    <a v-link="{ path: '/foo' }">Go to Foo</a>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Hello from './components/Hello';
 
 export default {
   components: {
     Hello
   }
-}
+};
 </script>
 
 <style>
