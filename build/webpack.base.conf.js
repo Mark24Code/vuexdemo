@@ -81,5 +81,9 @@ module.exports = {
   },
   vue: {
     loaders: utils.cssLoaders()
+  },
+  babel:{
+      presets:['es2015'],
+      plugins:['transform-runtime']
   }
 }
